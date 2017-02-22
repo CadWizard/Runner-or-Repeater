@@ -1,43 +1,17 @@
 
-nsList = []
-for line in open('NSList.txt','r').readlines():
-    nsList.append(line.strip())
 
+questions = ['Is the project a Nu-Heat Heat Pump? ', 'Is the project over 200 sqm? ', 'Is the project bigger than 120 sqm of Lo-Pro? ', 'Is the project over 60 sqm of Lo-Pro Max? ']
+designTeam = 'a runner.'
+for question in questions:
+    answer = input(question)
+    if answer.lower() == 'yes':
+        designTeam = 'a repeater.'
+        break
+print('This is', designTeam)
 
-print (nsList)           
-           
+import time
 
-NSname = input("Please enter the NS Record ")
-
-
-
-HP = input ("Is the project using a Nu-Heat Heat Pump?, Yes or No ")
-if HP == 'Yes':
-    print ("This is a Repeater project")
-    if HP == 'Yes':
-        raise SystemExit    
-      
-Size = input ("Is the project over 200 SQM? ")
-if Size == 'Yes':
-    print ("This is a Repeater project")
-    if Size == 'Yes':
-        raise SystemExit   
-
-LPM = input ("Is this project over 120 SQM of Lo-Pro Max? ")
-if LPM == 'Yes':
-    print ("This is a Repeater project")
-    if LPM == 'Yes':
-        raise SystemExit
-
-LP = input ("Is this project over 60 SQM of Lo-Pro10? ")
-if LP == 'Yes':
-    print ("This is a Repeater project")
-    if LPM == 'Yes':
-        raise SystemExit
-
-    
-else:
-    print ("This is a runner")
+time.sleep(10)
 
 
 

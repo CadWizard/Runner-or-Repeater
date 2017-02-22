@@ -1,3 +1,4 @@
+import time
 
 
 questions = ['Is the project a Nu-Heat Heat Pump? ', 'Is the project over 200 sqm? ', 'Is the project bigger than 120 sqm of Lo-Pro? ', 'Is the project over 60 sqm of Lo-Pro Max? ']
@@ -9,9 +10,8 @@ for question in questions:
         break
 print('This is', designTeam)
 
-import time
-
 time.sleep(10)
+
 
 
 
